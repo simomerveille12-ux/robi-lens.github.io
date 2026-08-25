@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+}
+.s{
+    margin: auto;
+}
+.elem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+.formulaire-projet{
+    color: white;
+    
+
+}
+.formulaire-projet form{
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+}
+.formulaire-projet h2{
+    color: #A5B4FC;
+    font-size: 3.5rem;
+}
+input[type="text"],input[type="email"],textarea{
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.label{
+    display: grid;
+    margin-bottom:15px ;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.accueil-photo{
+    background-color: white;
+}  
+.champ{
+    display: column;
+    gap: 20px;    
+}  
+h2{
+    margin: 2rem;
+    color: black;
+}
+.message{
+    display: row;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+input[type="submit"]{
+    width: auto;
+    margin:auto;
+    border-radius:20px ;
+    margin-top: 1rem;
+    border: none;
+    padding: 12px 30px;
+    background-color: #A5B4FC;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+.accueil-introduction{
+    font-size: 1.5rem;
+}
+.cta{
+    margin-bottom: 2rem;
+    width: 50%;
+    display: inline-block
+}
+em{
+    color: #A5B4FC;
+}
+
+@media screen and (max-width: 996px){
+    .accueil-introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accueil-introduction .s {
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .accueil-introduction .img {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .accueil-photo{
+        padding: 20px;
+    }
+
+    .accueil-photo div {
+        flex-direction: column;
+    }
+
+    formulaire-projet{
+        padding: 50px 20px;
+    }
+
+    .label{
+        grid-template-columns: 1fr;
+    }
+}
+

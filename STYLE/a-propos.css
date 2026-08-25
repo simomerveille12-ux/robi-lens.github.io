@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+h2,ul{
+    margin-top: 20px;
+}
+.carre-contenu {
+    padding: auto;
+    width: 50%;
+    margin: auto;
+    text-align:center;
+}
+
+.carre-contenu p,.carre-contenu ul{
+    margin: auto;
+    flex-wrap: wrap;
+    display:flex;
+    text-align:start;
+    gap: 1rem;
+}
+.carre-contenu ul{
+    text-align:start;
+    display: block;
+    margin: auto;
+}
+.carre {
+    margin: auto;
+    font-size: 1.5rem;
+}
+.cta{
+    margin-left:10rem;
+    margin-right:10rem; 
+}
+.tarif h2{
+    padding: 2rem;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 350px;
+    color: white;
+    font-size: 1.5rem;
+    margin:0;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+tr,td,th{
+    border: 1px solid whitesmoke;
+}
+@media screen and (max-width: 996px){
+    .tarif {
+    display: none;
+  }
+}
